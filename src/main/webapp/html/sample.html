@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+    	  var trendData="";
+  		
+  		
+  		
+  		trendData+=['name', 'Sumant'],['12-4-2014 05:29:04',5];
+  		
+  		
+  		
+/*   		trendData=+'[11-4-2014 05:29:04,5]';
+  		
+  		
+  		
+  		trendData=+'[10-4-2014 05:29:04,5]'; */
+  		alert(trendData);
+  			
+  		var data = google.visualization
+  				.arrayToDataTable([trendData]);
+  		
+        var data = google.visualization.arrayToDataTable([trendData
+/*           ['name', 'Sumant', 'Param'],
+          ['Feb-28',  1000,      400],
+          ['Mar-01',  1170,      460],
+          ['Mar-02',  660,       1120],
+          ['Mar-03',  1030,      540] */
+        ]);
+
+        var options = {
+          title: 'Company Performance'
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

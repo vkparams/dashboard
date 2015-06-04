@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+  <definition name="baseLayout" template="/tiles/baseLayout.jsp">
+      <put-attribute name="title"  value="LTS2 Dashboard"/>
+      <put-attribute name="header" value="/tiles/header.jsp"/>
+      <put-attribute name="menu"   value="/tiles/menu.jsp"/>
+      <put-attribute name="body"   value="/tiles/body.jsp"/>
+      <put-attribute name="footer"   value="/tiles/footer.jsp"/>
+  </definition>
+  
+  <definition name="welcome" extends="baseLayout">
+      <put-attribute name="body"   value="/pages/welcome.jsp"/>
+  </definition>
+  
+    <definition name="login" extends="baseLayout">
+      <put-attribute name="body"   value="/pages/login.jsp"/>
+  </definition>
+  
+    <definition name="displayCommits" extends="baseLayout">
+      <put-attribute name="body"   value="/pages/displayCommits.jsp"/>
+  </definition>
+
+
+    <definition name="selectRepos" extends="baseLayout">
+        <put-attribute name="body"   value="/pages/selectRepos.jsp"/>
+    </definition>
+
+
+
+    <definition name="displayCommitDetails" extends="baseLayout">
+        <put-attribute name="body"   value="/pages/displayCommitDetails.jsp"/>
+    </definition>
+
+
+
+    <definition name="selectManualTest" extends="baseLayout">
+        <put-attribute name="body"   value="/pages/selectManualTest.jsp"/>
+    </definition>
+
+    <definition name="unitTest" extends="baseLayout">
+        <put-attribute name="body"   value="/pages/unitTest.jsp"/>
+    </definition>
+    
+
+    <definition name="selectUnitTests" extends="baseLayout">
+        <put-attribute name="body"   value="/pages/selectUnitTestComponents.jsp"/>
+    </definition>
+    
+    <definition name="displayUnitTestsTrend" extends="baseLayout">
+        <put-attribute name="body"   value="/pages/displayUnitTestsTrend.jsp"/>
+    </definition>
+
+    <definition name="selectTestPlans" extends="baseLayout">
+        <put-attribute name="body"   value="/pages/selectAutomationTrend.jsp"/>
+    </definition>
+    
+    <definition name="displayAutomationTestsTrend" extends="baseLayout">
+        <put-attribute name="body"   value="/pages/displayAutomationTestsTrend.jsp"/>
+    </definition>
+    
+    <definition name="selectSprints" extends="baseLayout">
+        <put-attribute name="body"   value="/pages/selectSprints.jsp"/>
+    </definition>
+    
+    <definition name="issueDetails" extends="baseLayout">
+        <put-attribute name="body"   value="/pages/issueDetails.jsp"/>
+    </definition> 
+    
+    <definition name="displayTrends" extends="baseLayout">
+        <put-attribute name="body"   value="/pages/displayTrends.jsp"/>
+    </definition>
+
+    <definition name="displaySprintComparison" extends="baseLayout">
+        <put-attribute name="body"   value="/pages/displaySprintComparison.jsp"/>
+    </definition>
+
+    <definition name="displayAutomationTrendComparison" extends="baseLayout">
+        <put-attribute name="body"   value="/pages/displayAutomationTrendComparison.jsp"/>
+    </definition>
+
+</tiles-definitions>
